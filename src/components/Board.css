@@ -1,0 +1,108 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+  gap: 2px;
+}
+
+.row {
+  display: flex;
+  gap: 1px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background-color: #3e6997;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  border: 0.5px solid white;
+  transition: background-color 0.2s ease;
+}
+
+.cell:hover {
+  background-color: #607b97;
+}
+
+.cell.revealed {
+  background-color: #6c757d;
+  color: white;
+  cursor: default;
+}
+
+.cell.mine {
+  background-color: #dc3545;
+  color: white;
+}
+
+.cell.flagged {
+  background-color: #ffc107;
+  color: white;
+}
+
+.reset-button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #3e6997;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.reset-button:hover {
+  background-color: #5a7897;
+}
+.flag-count {
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media (max-width: 600px) {
+  .game-container h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .game-container .mines-left {
+    font-size: 0.9rem;
+  }
+
+  .board {
+    padding: 6px;
+    gap: 1px;
+  }
+
+  .row {
+    gap: 1px;
+  }
+
+  .cell {
+    width: 20px;
+    height: 20px;
+    font-size: 0.7rem;
+  }
+
+  .reset-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

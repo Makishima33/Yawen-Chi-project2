@@ -1,0 +1,16 @@
+.game-page-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.game-page-heading {
+  font-size: 2.5rem;
+  color: #3e6997;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.board-container {
+  display: flex;
+  justify-content: center;
+}

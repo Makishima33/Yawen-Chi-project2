@@ -1,0 +1,38 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #3e6997;
+}
+
+.home-description {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  max-width: 600px;
+}
+
+.play-button {
+  display: inline-block;
+  background-color: #3e6997;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: #254970;
+}
